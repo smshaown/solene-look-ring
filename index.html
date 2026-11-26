@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solène Look Ring — Interactive Editorial Lookbook</title>
+  <meta name="description" content="Explore eight curated looks arranged on a 2.5D editorial ring. Drag to turn, inspect styled pieces with interactive hotspots, and shop the complete look.">
+
+  <!-- OpenGraph & Twitter -->
+  <meta property="og:title" content="Solène Look Ring — Interactive Editorial Lookbook">
+  <meta property="og:description" content="Eight ways to wear it. Turn the ring, open a look, and shop its styled pieces.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Solène Look Ring — Interactive Editorial Lookbook">
+  <meta name="twitter:description" content="Eight ways to wear it. Turn the ring, open a look, and shop its styled pieces.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%23e9dfd0' stroke='%231d1a17' stroke-width='2'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Solène Look Ring — Vol. 02 · The edit",
+      "description": "Interactive editorial lookbook featuring eight styled looks arranged in a 2.5D ring."
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section
+      id="solene-look-ring"
+      class="rg"
+      aria-label="Solène Look Ring — Vol. 02 The edit"
+      data-cart-url="#bag"
+      data-view-bag="View bag"
+    >
+      <!-- Atmospheric Film Grain -->
+      <div class="rw-grain" aria-hidden="true"></div>
+
+      <!-- Concentric Floor Rings -->
+      <div class="rg-floor" aria-hidden="true">
+        <i class="rg-floor-outer"></i>
+        <i class="rg-floor-inner"></i>
+      </div>
+
+      <!-- Center Editorial Heading -->
+      <header class="rg-head">
+        <p class="rg-eyebrow">Vol. 02 · The edit</p>
+        <h1 class="rg-title">
+          <span><i>Eight ways</i></span>
+          <span><i>to wear it.</i></span>
+        </h1>
+      </header>
+
+      <!-- Interactive 2.5D Ring Stage -->
+      <div
+        class="rg-stage"
+        tabindex="0"
+        role="group"
+        aria-roledescription="carousel"
+        aria-label="Looks in a ring. Use left and right arrow keys or drag to turn, press Enter to open the front look."
+        data-stage
+      ></div>
+
+      <!-- Empty State Fallback (shown only if LOOKS is empty) -->
+      <div class="rg-empty" data-empty hidden>
+        <p class="rg-eyebrow">Vol. 02 · The edit</p>
+        <p class="rg-empty-copy">No looks are currently configured for this ring.</p>
+      </div>
+
+      <!-- Bottom-Left Front Look HUD -->
+      <div class="rg-near" data-near>
+        <p class="rg-count">
+          <span data-near-index>01</span>
+          <span data-near-total>/ 08</span>
+        </p>
+        <h2 class="rg-name"><span data-near-name>Off duty</span></h2>
+        <button type="button" class="rg-view" data-view>
+          <span>View the look</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <path d="M4 12h15M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.4" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Bottom-Right Navigation Controls -->
+      <nav class="rg-turn" aria-label="Ring rotation controls" data-turn>
+        <button type="button" aria-label="Turn to the previous look" data-prev>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M20 12H5M11 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.4" />
+          </svg>
+        </button>
+        <span class="rg-hint" aria-hidden="true">
+          <i></i>
+          Drag to turn
+        </span>
+        <button type="button" aria-label="Turn to the next look" data-next>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M4 12h15M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.4" />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Shop-the-Look Detail Panel -->
+      <aside class="rg-panel" aria-hidden="true" inert data-panel>
+        <div class="rg-panel-in" data-panel-content>
+          <p class="rg-count">
+            <span data-panel-index>Look 01</span>
+            <span data-panel-total>/ 08</span>
+          </p>
+          <h2 class="rg-big" tabindex="-1"><span data-panel-name>Off duty</span></h2>
+          <p class="rg-line" data-panel-line></p>
+          <ul class="rg-pieces" role="list" data-pieces></ul>
+          <button type="button" class="rw-all rg-all" data-add-look>
+            <span data-add-look-label>Add the look</span>
+            <span data-add-look-price>$0</span>
+          </button>
+        </div>
+
+        <button type="button" class="rg-close" data-close>
+          <span>Back to the ring</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+            <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.4" />
+          </svg>
+        </button>
+      </aside>
+
+      <!-- Cart Status Toast -->
+      <div class="rw-toast" role="status" aria-live="polite" data-toast></div>
+
+      <!-- Screen Reader Carousel Announcer -->
+      <div class="rw-sr" aria-live="polite" aria-atomic="true" data-announcer></div>
+    </section>
+  </main>
+
+  <footer class="demo-bar">
+    <p>HTML + CSS + GSAP implementation of Solène Look Ring. Product links and bag actions are simulated locally.</p>
+  </footer>
+
+  <!-- GSAP 3 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
